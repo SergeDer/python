@@ -11,5 +11,5 @@ ex_list = [1,
            None
            ]
 
-for i in range(len(ex_list)):
-    print(type(ex_list[i]))
+for el in ex_list:
+    print(el)
