@@ -4,8 +4,9 @@ def division(a, b):
         return a / b
     except ZeroDivisionError:
         return
-    except TypeError:
-        return
 
 
-print(division(1, 0))
+a = float(input('Введите число "a": '))
+b = float(input('Введите число "b": '))
+div = round(division(a, b), 2)
+print(f'Результат деления a на b: {div}') if div is not None else print('Делить на ноль нельзя!')
